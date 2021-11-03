@@ -17,9 +17,9 @@ strlen	<DONE>
 
 strdup	<DONE>
 
-strcpy
+strcpy	<DONE>
 
-strncpy
+strncpy	<DONE>
 
 strcat
 
