@@ -1,0 +1,104 @@
+
+memset
+
+bzero
+
+memcpy
+
+memccpy
+
+memmove
+
+memchr
+
+memcmp
+
+strlen	<DONE>
+
+strdup	<DONE>
+
+strcpy
+
+strncpy
+
+strcat
+
+strncat
+
+strlcat
+
+strchr
+
+strrchr
+
+strstr
+
+strnstr
+
+strcmp	<DONE>
+
+strncmp
+
+atoi
+
+isalpha	<DONE>
+
+isdigit	<DONE>
+
+isalnum	<DONE>
+
+isascii	<DONE>
+
+isprint	<DONE>
+
+toupper
+
+tolower
+
+putnbr_fd
+
+putendl_fd
+
+putstr_fd
+
+putchar_fd
+
+putnbr	<DONE>
+
+putendl
+
+putstr	<DONE>
+
+putchar	<DONE>
+
+itoa
+
+strsplit
+
+strtrim
+
+strjoin
+
+strsub
+
+strnequ
+
+strnequ
+
+strmapi
+
+strmap
+
+striteri
+
+striter
+
+strclr
+
+strdel
+
+strnew
+
+memdel
+
+memalloc

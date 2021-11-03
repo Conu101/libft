@@ -1,32 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 16:55:45 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/03 18:43:38 by ctrouve          ###   ########.fr       */
+/*   Created: 2021/11/01 16:32:04 by ctrouve           #+#    #+#             */
+/*   Updated: 2021/11/03 18:33:27 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include <libft.h>
 
-#include <ctype.h>
-#include <unistd.h>
-#include <stdlib.h>
-
-int		ft_isalpha(int c);
-int		t_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-void	ft_putchar(char c);
-void	ft_putnbr(int nb);
-void	ft_putstr(char *str);
-int		ft_strcmp(char *s1, char *s2);
-char	*strdup(char *src);
-int		ft_strlen(char *str);
-
-#endif
+void	ft_putnbr(int nb)
+{
+	if (nb < 0)
+	{
+		nb = -nb;
+		ft_putchar('-');
+	}
+	if (nb > 10)
+	{
+		ft_putnbr(nb / 10);
+		ft_putnbr(nb % 10);
+	}
+	if (nb >= 0 && nb < 10)
+	{
+		ft_putchar(nb + '0');
+	}
+}
