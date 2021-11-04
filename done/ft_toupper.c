@@ -1,31 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 19:06:50 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/03 19:18:42 by ctrouve          ###   ########.fr       */
+/*   Created: 2021/11/04 17:46:42 by ctrouve           #+#    #+#             */
+/*   Updated: 2021/11/04 17:51:09 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char	*strncpy(char *dst, const char *src, size_t len)
+int	toupper(int c)
 {
-	size_t i;
-
-	i = 0;
-	while (src[i] != '\0' && i < len)
+	if (97 <= c <= 122)
 	{
-		dest[i] = src[i];
-		i++;
+		c = c - 32;
 	}
-	while (i < len)
-	{
-		dest[i] = '\0';
-		i++;
-	}
-	return (dest);
+	return (c);
 }

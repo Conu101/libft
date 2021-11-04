@@ -21,15 +21,15 @@ strcpy	<DONE>
 
 strncpy	<DONE>
 
-strcat
+strcat	<DONE>
 
-strncat
+strncat	<DONE>
 
-strlcat
+strlcat	<DONE>
 
-strchr
+strchr	<DONE>
 
-strrchr
+strrchr	<DONE>
 
 strstr
 
@@ -51,9 +51,9 @@ isascii	<DONE>
 
 isprint	<DONE>
 
-toupper
+toupper <DONE>
 
-tolower
+tolower <DONE>
 
 putnbr_fd
 

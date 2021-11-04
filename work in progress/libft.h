@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:55:45 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/03 19:18:59 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/04 17:51:45 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
+#include <xlocale.h>
 
 int		ft_isalpha(int c);
 int		t_isdigit(int c);
@@ -31,5 +32,12 @@ char	*strdup(char *src);
 int		ft_strlen(char *str);
 char	*strcpy(char *dst, const char *src);
 char	*strncpy(char *dst, const char *src, size_t len);
+char	*strcat(char *restrict s1, const char *restrict s2);
+char	*strncat(char *restrict s1, const char *restrict s2, size_t n);
+size_t	strlcat(char *restrict dst, const char *restrict src, size_t dstsize);
+char	*strchr(const char *s, int c);
+char	*strrchr(const char *s, int c);
+int		toupper(int c);
+int		tolower(int c);
 
 #endif

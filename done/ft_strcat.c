@@ -1,22 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 17:24:36 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/04 16:53:49 by ctrouve          ###   ########.fr       */
+/*   Created: 2021/11/04 15:51:07 by ctrouve           #+#    #+#             */
+/*   Updated: 2021/11/04 16:05:41 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-int	ft_isalnum(int c)
+char	*strcat(char *restrict s1, const char *restrict s2)
 {
-	if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') \
-	|| (c >= 'a' && c <= 'z'))
-		return (1);
-	else
-		return (0);
+	int	i;
+	int	j;
+
+	i = 0;
+	while (s1[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (s2[j] != '\0')
+	{
+		s1[i] = s2[j];
+		i++;
+		j++;
+	}
+	s1[i] = '\0';
+	return (s1);
 }

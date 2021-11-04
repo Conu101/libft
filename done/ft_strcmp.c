@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 12:43:23 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/03 18:38:46 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/04 16:53:09 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strcmp(char *s1, char *s2)
 {
-	int i;
+	int	i;
 
 	i = 1;
 	while (s1[i] != '\0' && s1[i] == s2[i])

@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 18:52:07 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/03 19:09:47 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/04 16:53:01 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*strcpy(char *dst, const char *src)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	while (src[i] != '\0')
