@@ -1,25 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_striter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/11 17:28:55 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/11 17:28:55 by ctrouve          ###   ########.fr       */
+/*   Created: 2021/11/11 18:01:22 by ctrouve           #+#    #+#             */
+/*   Updated: 2021/11/11 18:01:22 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
-** The bzero() function writes n zeroed bytes (\0) to the string s.  If n
-** is zero, bzero() does nothing.
+** The ft_striter() function applies the function f to each character of the
+** string passed as argument. Each character is passed by address to f to be
+** modified if necessary.
 */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	ft_striter(char *s, void (*f) (char *))
 {
-	if (n != 0)
+	int i;
+
+	if (s && f)
 	{
-		ft_memset(s, '\0', n);
+		i = 0;
+		while (s[i] != '\0')
+		{
+			f(&s[i]);
+			i++;
+		}
 	}
 }

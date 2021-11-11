@@ -1,25 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/11 17:28:55 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/11 17:28:55 by ctrouve          ###   ########.fr       */
+/*   Created: 2021/11/11 17:56:05 by ctrouve           #+#    #+#             */
+/*   Updated: 2021/11/11 17:56:05 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
-** The bzero() function writes n zeroed bytes (\0) to the string s.  If n
-** is zero, bzero() does nothing.
+** The ft_strdel() function takes as a parameter the address of a string that
+** needs to be freed with free(3), then sets its pointer to NULL.
 */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	ft_strdel(char **as)
 {
-	if (n != 0)
+	if (as)
 	{
-		ft_memset(s, '\0', n);
+		if (*as != NULL)
+		{
+			free(*as);
+			*as = NULL;
+		}
 	}
 }

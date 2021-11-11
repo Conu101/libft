@@ -51,54 +51,54 @@ isascii	<DONE>
 
 isprint	<DONE>
 
-toupper <DONE>
+toupper	<DONE>
 
-tolower <DONE>
+tolower	<DONE>
 
-putnbr_fd
+putnbr_fd	<DONE>
 
-putendl_fd
+putendl_fd	<DONE>
 
-putstr_fd
+putstr_fd	<DONE>
 
-putchar_fd
+putchar_fd	<DONE>
 
 putnbr	<DONE>
 
-putendl
+putendl	<DONE>
 
 putstr	<DONE>
 
 putchar	<DONE>
 
-itoa
+itoa	<DONE>
 
-strsplit
+strsplit	<DONE>
 
-strtrim
+strtrim	<DONE>
 
-strjoin
+strjoin	<DONE>
 
-strsub
+strsub	<DONE>
 
-strnequ
+strnequ	<DONE>
 
-strnequ
+strequ	<DONE>
 
-strmapi
+strmapi	<DONE>
 
-strmap
+strmap	<DONE>
 
-striteri
+striteri	<DONE>
 
-striter
+striter	<DONE>
 
-strclr
+strclr	<DONE>
 
-strdel
+strdel	<DONE>
 
-strnew
+strnew	<DONE>
 
-memdel
+memdel	<DONE>
 
-memalloc
+memalloc	<DONE>
