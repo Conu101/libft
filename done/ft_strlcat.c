@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 size_t	strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 {
@@ -29,7 +29,7 @@ size_t	strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 		return (dstsize + j);
 	}
 	while (dstsize > 0 && i < dstsize - 1 && src[j])
-		dest[i++] = src[j++];
+		dst[i++] = src[j++];
 	dst[i] = '\0';
 	while (src[j++])
 		i++;
