@@ -1,17 +1,17 @@
 
-memset
+memset	<DONE>
 
-bzero
+bzero	<DONE>
 
-memcpy
+memcpy	<DONE>
 
-memccpy
+memccpy	<DONE>
 
-memmove
+memmove	<DONE>
 
-memchr
+memchr	<DONE>
 
-memcmp
+memcmp	<DONE>
 
 strlen	<DONE>
 
@@ -33,13 +33,13 @@ strrchr	<DONE>
 
 strstr	<DONE>
 
-strnstr
+strnstr	<DONE>
 
 strcmp	<DONE>
 
-strncmp
+strncmp	<DONE>
 
-atoi
+atoi	<DONE>
 
 isalpha	<DONE>
 
