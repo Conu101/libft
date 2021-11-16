@@ -39,5 +39,6 @@ char	*strchr(const char *s, int c);
 char	*strrchr(const char *s, int c);
 int		toupper(int c);
 int		tolower(int c);
+char	*strstr(const char *haystack, const char *needle);
 
 #endif
