@@ -1,31 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 18:40:54 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/04 16:52:51 by ctrouve          ###   ########.fr       */
+/*   Created: 2021/11/11 17:20:14 by ctrouve           #+#    #+#             */
+/*   Updated: 2021/11/11 17:20:14 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** The ft_memcpy() function copies n bytes from memory area src to memory area
+** dst.  If dst and src overlap, behavior is undefined. Returns the original
+** value of dst.
+*/
+
 #include "libft.h"
 
-char	*strdup(char *src)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	int		i;
-	char	*dest;
+	size_t			i;
+	unsigned char	*access_src;
+	unsigned char	*edit_dst;
 
 	i = 0;
-	dest = malloc(sizeof(*src) * (ft_strlen((char *)src) + 1));
-	if (dest == NULL)
-		return (NULL);
-	while (src[i] != '\0')
+	access_src = (unsigned char*)src;
+	edit_dst = (unsigned char*)dst;
+	while (i < n)
 	{
-		dest[i] = src[i];
+		edit_dst[i] = access_src[i];
 		i++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	return (dst);
 }

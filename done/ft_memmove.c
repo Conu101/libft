@@ -1,31 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 16:32:04 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/04 16:53:28 by ctrouve          ###   ########.fr       */
+/*   Created: 2021/11/11 17:18:06 by ctrouve           #+#    #+#             */
+/*   Updated: 2021/11/11 17:18:06 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** The ft_memmove() function copies len bytes from string src to string dst.
+** The two strings may overlap; the copy is always done in a non-destructive
+** manner. Returns the original value of dst.
+*/
+
 #include "libft.h"
 
-void	ft_putnbr(int nb)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	if (nb < 0)
+	int i;
+
+	if (dst > src)
 	{
-		nb = -nb;
-		ft_putchar('-');
+		i = (int)len - 1;
+		while (i >= 0)
+		{
+			((char *)dst)[i] = ((char *)src)[i];
+			i--;
+		}
 	}
-	if (nb > 10)
+	else
 	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
+		ft_memcpy(dst, src, len);
 	}
-	if (nb >= 0 && nb < 10)
-	{
-		ft_putchar(nb + '0');
-	}
+	return (dst);
 }

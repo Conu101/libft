@@ -1,38 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_memalloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/04 16:59:00 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/04 17:39:40 by ctrouve          ###   ########.fr       */
+/*   Created: 2021/11/11 17:43:28 by ctrouve           #+#    #+#             */
+/*   Updated: 2021/11/11 17:43:28 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** Allocates (with malloc(3)) and returns a “fresh” memory area.
+** The memory allocated is initialized to 0. If the allocation fails, the 
+** function returns NULL.
+** Param. #1 The size of the memory that needs to be allocated.
+** Return value The allocated memory area.
+*/
+
 #include "libft.h"
 
-char	*strrchr(const char *s, int c)
+void	*ft_memalloc(size_t size)
 {
-	int		i;
-	char	*pointer;
+	void	*ptr;
 
-	while (s[i] != '\0')
+	if (size)
 	{
-		i++;
-	}
-	pointer = s[i];
-	if (*pointer == '\0' && c == '\0')
-	{
-		return (pointer);
-	}
-	while (*pointer)
-	{
-		if (*pointer == c)
+		ptr = (void *)malloc(sizeof(*ptr) * (size));
+		if (ptr)
 		{
-			return (pointer);
+			ft_memset(ptr, 0, size);
+			return (ptr);
 		}
-		pointer--;
 	}
 	return (NULL);
 }

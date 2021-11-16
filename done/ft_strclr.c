@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_strclr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 16:31:29 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/03 18:32:30 by ctrouve          ###   ########.fr       */
+/*   Created: 2021/11/11 17:59:47 by ctrouve           #+#    #+#             */
+/*   Updated: 2021/11/11 17:59:47 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*
+** The ft_strclr() function sets every character of the string s to '\0'.
+*/
 
 #include "libft.h"
 
-void	ft_putchar(char c)
+void	ft_strclr(char *s)
 {
-	write(1, &c, 1);
+	if (s)
+	{
+		while (*s)
+		{
+			*s = '\0';
+			s++;
+		}
+	}
 }

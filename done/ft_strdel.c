@@ -1,18 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_strdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 16:31:29 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/03 18:32:30 by ctrouve          ###   ########.fr       */
+/*   Created: 2021/11/11 17:56:05 by ctrouve           #+#    #+#             */
+/*   Updated: 2021/11/11 17:56:05 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*
+** The ft_strdel() function takes as a parameter the address of a string that
+** needs to be freed with free(3), then sets its pointer to NULL.
+*/
 
 #include "libft.h"
 
-void	ft_putchar(char c)
+void	ft_strdel(char **as)
 {
-	write(1, &c, 1);
+	if (as)
+	{
+		if (*as != NULL)
+		{
+			free(*as);
+			*as = NULL;
+		}
+	}
 }
