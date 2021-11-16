@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:55:45 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/04 17:51:45 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/16 16:41:28 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,6 @@ char	*strchr(const char *s, int c);
 char	*strrchr(const char *s, int c);
 int		toupper(int c);
 int		tolower(int c);
-<<<<<<< HEAD
-char	*strstr(const char *haystack, const char *needle);
-=======
 char	*ft_strnstr(const char *big, const char *little, size_t l);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_atoi(const char *str);
@@ -66,7 +63,6 @@ int		ft_strequ(const char *s1, const char *s2);
 int		ft_strnequ(const char *s1, const char *s2, size_t n);
 char	*ft_strsub(const char *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
-static	int	get_start(char const *s);
 char	**ft_strsplit(char const *s, char c);
 char	*ft_itoa(int n);
 void	ft_putendl(char const *s);
@@ -74,6 +70,5 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
->>>>>>> 8024895df6ba857155bea44936a21f189aeea5cd
 
 #endif
