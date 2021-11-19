@@ -67,9 +67,9 @@ putnbr	<DONE>
 
 putendl	<DONE>
 
-putstr	<DONE>
+putstr	<DONE> TEST
 
-putchar	<DONE>
+putchar	<DONE> TEST
 
 itoa	<DONE>
 
