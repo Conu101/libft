@@ -41,15 +41,15 @@ strncmp	<DONE>
 
 atoi	<DONE>
 
-isalpha	<DONE>
+isalpha	<DONE> TEST
 
-isdigit	<DONE>
+isdigit	<DONE> TEST
 
-isalnum	<DONE>
+isalnum	<DONE> TEST
 
-isascii	<DONE>
+isascii	<DONE> TEST
 
-isprint	<DONE>
+isprint	<DONE> TEST
 
 toupper	<DONE>
 
