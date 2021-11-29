@@ -6,13 +6,13 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 16:06:31 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/04 16:09:06 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/29 11:03:59 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strncat(char *restrict s1, const char *restrict s2, size_t n)
+char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n)
 {
 	int	i;
 	int	j;

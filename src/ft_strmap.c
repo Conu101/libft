@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:04:44 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/29 10:19:59 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/29 11:02:08 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strmap(const char *s, char (*f)(char))
 
 	if (s && f)
 	{
-		new_str = (char *)malloc(sizeof(*new_str) * (ft_strlen(s) + 1));
+		new_str = (char *)malloc(sizeof(*new_str) * (ft_strlen((char *)s) + 1));
 		if (new_str)
 		{
 			i = 0;

@@ -6,11 +6,11 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:22:11 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/11 18:22:11 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/29 11:09:34 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*
-** The ft_strsplit() function allocates with malloc(3) and returns an array of
+
+/* The ft_strsplit() function allocates with malloc(3) and returns an array of
 ** fresh strings (all ending with '\0' including the array itself) obtained by
 ** splitting s using the character c as a delimiter. If the allocation fails,
 ** the function returns NULL.
@@ -31,7 +31,7 @@ static const char	*ft_find_next_str(const char *str, char c, int skip)
 
 static int			ft_count_splits_str(const char *str, char seps)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (*str != '\0')
@@ -48,7 +48,7 @@ static int			ft_count_splits_str(const char *str, char seps)
 
 static void			*ft_tabledel(char **array, int i)
 {
-	int x;
+	int	x;
 
 	x = 0;
 	if (array)

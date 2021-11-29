@@ -6,9 +6,10 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 17:52:12 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/11 17:52:12 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/29 11:05:11 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
 ** The function ft_strnew() allocates with malloc(3) and returns a fresh
 ** string ending with '\0'. Each character of the string is initialized at

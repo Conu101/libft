@@ -6,9 +6,10 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:14:42 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/11 18:14:42 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/29 11:09:02 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
 ** The ft_strsub() function allocates with malloc(3) and returns a "fresh"
 ** substring from string given as an argument. The substring begins at index

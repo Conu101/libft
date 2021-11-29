@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 17:55:10 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/04 18:17:02 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/29 11:08:29 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*strstr(const char *haystack, const char *needle)
 	int		needle_len;
 
 	phaystack = (char *)haystack;
-	needle_len = ft_strlen(needle);
+	needle_len = ft_strlen((char *)needle);
 	if (needle_len == 0)
 	{
 		return (phaystack);
@@ -27,7 +27,7 @@ char	*strstr(const char *haystack, const char *needle)
 	{
 		if (*phaystack == *needle)
 		{
-			if (ft_strcmp(needle, phaystack, needle_len) == 0)
+			if (ft_strncmp(needle, phaystack, needle_len) == 0)
 			{
 				return (phaystack);
 			}

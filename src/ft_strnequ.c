@@ -6,11 +6,11 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:11:26 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/11 18:11:26 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/29 11:04:50 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*
-** The ft_strnequ() function does a lexicographical comparison between s1 and
+
+/* The ft_strnequ() function does a lexicographical comparison between s1 and
 ** s2. If the 2 strings are identical the function returns 1, or 0 otherwise.
 */
 

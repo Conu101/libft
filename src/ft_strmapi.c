@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:06:43 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/29 10:20:14 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/29 11:03:15 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 
 	if (s && f)
 	{
-		new_str = (char *)malloc(sizeof(*new_str) * (ft_strlen(s) + 1));
+		new_str = (char *)malloc(sizeof(*new_str) * (ft_strlen((char *)s) + 1));
 		if (new_str)
 		{
 			i = 0;
