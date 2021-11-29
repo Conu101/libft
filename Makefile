@@ -6,13 +6,13 @@
 #    By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/16 16:43:56 by ctrouve           #+#    #+#              #
-#    Updated: 2021/11/16 17:11:46 by ctrouve          ###   ########.fr        #
+#    Updated: 2021/11/29 09:47:22 by ctrouve          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-SRC = ./src/ft_atoi.c ./src/ft_bzero.c ./src/ft_isalnum.c.c ./src/ft_isalpha.c \
+SRC = ./src/ft_atoi.c ./src/ft_bzero.c ./src/ft_isalnum.c ./src/ft_isalpha.c \
 ./src/ft_isascii.c ./src/ft_isdigit.c ./src/ft_isprint.c ./src/ft_itoa.c \
 ./src/ft_memalloc.c ./src/ft_memccpy.c ./src/ft_memchr.c ./src/ft_memcmp.c \
 ./src/ft_memcpy.c ./src/ft_memdel.c ./src/ft_memmove.c ./src/ft_memset.c \

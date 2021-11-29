@@ -6,11 +6,11 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:16:30 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/11 18:16:30 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/29 10:19:39 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*
-** The ft_strjoin() function allocates (with malloc(3)) and returns a "fresh"
+
+/* The ft_strjoin() function allocates (with malloc(3)) and returns a "fresh"
 ** string that is the concatenation of s1 and s2, ending with '\0'. If the
 ** allocation fails, the function returns NULL.
 */

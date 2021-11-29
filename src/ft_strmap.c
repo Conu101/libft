@@ -6,11 +6,11 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:04:44 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/11 18:04:44 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/29 10:19:59 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*
-** The function ft_strmap() applies the function f to each character of the
+
+/* The function ft_strmap() applies the function f to each character of the
 ** string given as an argument to create a "fresh" new string (with malloc(3))
 ** resulting from the successive applications of f.
 */

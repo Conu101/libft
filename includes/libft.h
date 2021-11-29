@@ -6,19 +6,19 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:55:45 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/16 16:41:28 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/29 10:09:38 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <ctype.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <string.h>
-#include <xlocale.h>
-#include <stdbool.h>
+# include <ctype.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <string.h>
+# include <xlocale.h>
+# include <stdbool.h>
 
 int		ft_isalpha(int c);
 int		t_isdigit(int c);
@@ -29,17 +29,18 @@ void	ft_putchar(char c);
 void	ft_putnbr(int nb);
 void	ft_putstr(char *str);
 int		ft_strcmp(char *s1, char *s2);
-char	*strdup(char *src);
+char	*ft_strdup(const char *src);
 int		ft_strlen(char *str);
-char	*strcpy(char *dst, const char *src);
-char	*strncpy(char *dst, const char *src, size_t len);
-char	*strcat(char *restrict s1, const char *restrict s2);
-char	*strncat(char *restrict s1, const char *restrict s2, size_t n);
-size_t	strlcat(char *restrict dst, const char *restrict src, size_t dstsize);
-char	*strchr(const char *s, int c);
-char	*strrchr(const char *s, int c);
-int		toupper(int c);
-int		tolower(int c);
+char	*ft_strcpy(char *dst, const char *src);
+char	*ft_strncpy(char *dst, const char *src, size_t len);
+char	*ft_strcat(char *restrict s1, const char *restrict s2);
+char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n);
+size_t	ft_strlcat(char *restrict dst, const char *restrict src, \
+size_t dstsize);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
 char	*ft_strnstr(const char *big, const char *little, size_t l);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_atoi(const char *str);

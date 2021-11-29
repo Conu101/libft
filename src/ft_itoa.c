@@ -6,128 +6,60 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:29:50 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/11 18:29:50 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/29 10:10:21 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-** The ft_makeabs() function takes an integer and changes it to it's absolute
-** value, while changing the sign variable that gets passed in (1 for positive
-** or -1 for negative).
-*/
-
-void	ft_makeabs(int *n, int *sign)
+static char		*ft_array(char *x, unsigned int number, long int len)
 {
-	if (*n < 0)
+	while (number > 0)
 	{
-		*n = (*n * -1);
-		*sign = -1;
+		x[len--] = 48 + (number % 10);
+		number = number / 10;
 	}
-	else
-	{
-		*sign = 1;
-	}
+	return (x);
 }
 
-/*
-** num_chars() returns the number of digits in the int that is passed in,
-** as well as a space for a sign (if the number is negative).
-*/
-
-static	int		num_chars(int n)
+static long int	ft_len(int n)
 {
-	int i;
-	int sign;
+	int					len;
 
-	sign = -1;
-	i = 0;
-	if (n == 0)
+	len = 0;
+	if (n <= 0)
+		len = 1;
+	while (n != 0)
 	{
-		return (1);
-	}
-	if (n > 0)
-	{
-		n = n * -1;
-		sign = 1;
-	}
-	while (n < 0)
-	{
+		len++;
 		n = n / 10;
-		i++;
 	}
-	if (sign == -1)
-		return (i + 1);
-	else
-		return (i);
+	return (len);
 }
-
-/*
-** the is_edge_case() function checks for both 0 and min int conditions,
-** returning whether a number is an edge case, if true, writes the value
-** into the input string.
-*/
-
-static	int		is_edge_case(int n, void *str)
-{
-	char	*pstr;
-	int		x;
-	char	*fstr;
-
-	pstr = (char *)str;
-	if (n == -2147483648)
-	{
-		x = 0;
-		fstr = "-2147483648";
-		while (x <= 12)
-		{
-			pstr[x] = fstr[x];
-			x++;
-		}
-		return (1);
-	}
-	else if (n == 0)
-	{
-		pstr[0] = '0';
-		pstr[1] = '\0';
-		return (1);
-	}
-	return (0);
-}
-
-/*
-** The ft_itoa() fuction allocates (with malloc(3)) and returns a "fresh"
-** string ending with '\0' representing the integer n given as argument.
-** Negative numbers must be supported. If the allocation fails, the
-** function returns NULL
-*/
 
 char			*ft_itoa(int n)
 {
-	int		sign;
-	char	*str;
-	int		i;
+	char				*x;
+	long int			len;
+	unsigned int		number;
+	int					sign;
 
-	if ((str = malloc(sizeof(*str) * (num_chars(n) + 1))))
+	sign = 1;
+	len = ft_len(n);
+	x = (char *)malloc(sizeof(char) * (len + 1));
+	if (!(x))
+		return (NULL);
+	x[len--] = '\0';
+	if (n == 0)
+		x[0] = '0';
+	if (n < 0)
 	{
-		if (is_edge_case(n, str) == 1)
-			return (str);
-		ft_makeabs(&n, &sign);
-		i = 0;
-		while (n > 0)
-		{
-			str[i] = (n % 10) + '0';
-			n = n / 10;
-			i++;
-		}
-		if (sign == -1)
-		{
-			str[i] = '-';
-			i++;
-		}
-		str[i] = '\0';
-		return (ft_strrev(str, ft_strlen(str)));
+		sign *= -1;
+		number = n * -1;
+		x[0] = '-';
 	}
-	return (NULL);
+	else
+		number = n;
+	x = ft_array(x, number, len);
+	return (x);
 }

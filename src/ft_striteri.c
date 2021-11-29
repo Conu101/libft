@@ -6,11 +6,11 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:03:23 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/11 18:03:23 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/29 10:19:23 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*
-** The ft_striteri() function applies the function f to each character of the
+
+/* The ft_striteri() function applies the function f to each character of the
 ** string passed as argument, and passing its index as first argument. Each
 ** character is passed by address to f to be modified if necessary.
 */
@@ -19,7 +19,7 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	int i;
+	int	i;
 
 	if (s && f)
 	{

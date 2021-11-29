@@ -6,13 +6,13 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 18:40:54 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/04 16:52:51 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/29 09:42:44 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strdup(char *src)
+char	*ft_strdup(const char *src)
 {
 	int		i;
 	char	*dest;

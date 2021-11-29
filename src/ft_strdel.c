@@ -6,11 +6,11 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 17:56:05 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/11 17:56:05 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/29 10:18:37 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*
-** The ft_strdel() function takes as a parameter the address of a string that
+
+/* The ft_strdel() function takes as a parameter the address of a string that
 ** needs to be freed with free(3), then sets its pointer to NULL.
 */
 
