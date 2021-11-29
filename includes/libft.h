@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:55:45 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/29 10:09:38 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/29 15:21:09 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int		ft_isprint(int c);
 void	ft_putchar(char c);
 void	ft_putnbr(int nb);
 void	ft_putstr(char *str);
-int		ft_strcmp(char *s1, char *s2);
+int		ft_strcmp(const char *s1, const char *s2);
 char	*ft_strdup(const char *src);
 int		ft_strlen(char *str);
 char	*ft_strcpy(char *dst, const char *src);

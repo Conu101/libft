@@ -6,43 +6,34 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 16:18:48 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/11 16:18:48 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/11/29 14:41:27 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-bool	ft_is_whitespace(char c)
+int	ft_atoi(const char *str)
 {
-	return (c == ' ' || c == '\t' || c == '\v' || c == '\f'|| c == '\n' \
-	|| c == '\r');
-}
+	int	neg;
+	int	i;
+	int	num;
 
-bool	ft_is_number(char c)
-{
-	return (c >= '0' && c <= '9');
-}
-
-int		ft_atoi(const char *str)
-{
-	int	result;
-	int	minus;
-
-	minus = 1;
-	while (ft_is_whitespace(*str))
-		str++;
-	if (*str == '-' || *str == '+')
+	i = 0;
+	neg = 1;
+	num = 0;
+	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == '\v' \
+	|| str[i] == '\f' || str[i] == '\r')
+		i++;
+	if (str[i] == '-' || str[i] == '+')
 	{
-		if (*str == '-')
-			minus *= -1;
-		str++;
+		if (str[i] == '-')
+			neg *= -1;
+		i++;
 	}
-	result = 0;
-	while (ft_is_number(*str))
+	while (str[i] >= 48 && str[i] <= 57)
 	{
-		result *= 10;
-		result += *str - '0';
-		str++;
+		num = num * 10 + (str[i] - 48);
+		i++;
 	}
-	return (result * minus);
+	return (num * neg);
 }
