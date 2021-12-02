@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 17:25:12 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/11 17:25:12 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/02 17:15:40 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	char	*str;
-	size_t	i;
+	unsigned char	*str;
+	size_t			i;
 
-	str = (char *)b;
+	str = (unsigned char *)b;
 	i = 0;
 	while (i < len)
 	{

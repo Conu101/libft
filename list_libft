@@ -1,9 +1,9 @@
 
-memset	<DONE>
+memset	<DONE> TEST
 
-bzero	<DONE>
+bzero	<DONE> TEST
 
-memcpy	<DONE>
+memcpy	<DONE> TEST
 
 memccpy	<DONE>
 
@@ -39,7 +39,7 @@ strcmp	<DONE>
 
 strncmp	<DONE>
 
-atoi	<DONE>
+atoi	<DONE> TEST
 
 isalpha	<DONE> TEST
 
@@ -51,21 +51,21 @@ isascii	<DONE> TEST
 
 isprint	<DONE> TEST
 
-toupper	<DONE>
+toupper	<DONE> TEST
 
-tolower	<DONE>
+tolower	<DONE> TEST
 
-putnbr_fd	<DONE>
+putnbr_fd	<DONE> TEST obvious from non fd function
 
-putendl_fd	<DONE>
+putendl_fd	<DONE> TEST obvious from non fd function
 
-putstr_fd	<DONE>
+putstr_fd	<DONE> TEST obvious from non fd function
 
-putchar_fd	<DONE>
+putchar_fd	<DONE> TEST obvious from non fd function
 
-putnbr	<DONE>
+putnbr	<DONE> TEST
 
-putendl	<DONE>
+putendl	<DONE> TEST
 
 putstr	<DONE> TEST
 
