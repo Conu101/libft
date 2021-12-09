@@ -6,10 +6,9 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:29:50 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/09 15:53:11 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/09 18:19:41 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 /* Allocate (withmalloc(3)) and returns a “fresh” string end-ing with’\0’
 ** representing the integer n given as argument. Negative numbers must be 
@@ -18,7 +17,7 @@
 
 #include "libft.h"
 
-static char		*ft_array(char *x, unsigned int number, long int len)
+static char	*ft_array(char *x, unsigned int number, long int len)
 {
 	while (number > 0)
 	{
@@ -43,7 +42,7 @@ static long int	ft_len(int n)
 	return (len);
 }
 
-char			*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char				*x;
 	long int			len;

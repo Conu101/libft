@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 17:55:10 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/09 16:22:27 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/09 18:12:17 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 #include "libft.h"
 
-char	*strstr(const char *haystack, const char *needle)
+char	*ft_strstr(const char *haystack, const char *needle)
 {
 	char	*phaystack;
 	int		needle_len;

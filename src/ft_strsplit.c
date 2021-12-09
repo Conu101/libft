@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:22:11 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/09 16:40:43 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/09 18:18:21 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static const char	*ft_find_next_str(const char *str, char c, int skip)
 	return (str);
 }
 
-static int			ft_count_splits_str(const char *str, char seps)
+static int	ft_count_splits_str(const char *str, char seps)
 {
 	int	i;
 
@@ -46,7 +46,7 @@ static int			ft_count_splits_str(const char *str, char seps)
 	return (i);
 }
 
-static void			*ft_tabledel(char **array, int i)
+static void	*ft_tabledel(char **array, int i)
 {
 	int	x;
 
@@ -63,7 +63,7 @@ static void			*ft_tabledel(char **array, int i)
 	return (NULL);
 }
 
-char				**ft_strsplit(char const *s, char c)
+char	**ft_strsplit(char const *s, char c)
 {
 	char		**result;
 	int			i;
