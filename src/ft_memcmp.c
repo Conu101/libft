@@ -6,9 +6,10 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 16:56:37 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/11 16:56:37 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/09 14:37:09 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
 ** ft_memcmp - Compare two areas of memory
 ** @s1:	One area of memory
@@ -29,8 +30,9 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 	{
 		area1 = (const unsigned char *)s1;
 		area2 = (const unsigned char *)s2;
-		if ((result = *area1 - *area2) != 0)
-			break ;
+		result = *area1 - *area2;
+		if (result != 0)
+			break;
 		s1++;
 		s2++;
 		n--;

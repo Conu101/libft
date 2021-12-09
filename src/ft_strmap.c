@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:04:44 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/29 11:02:08 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/09 13:36:01 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 #include "libft.h"
 
-char	*ft_strmap(const char *s, char (*f)(char))
+char	*ft_strmap(const char *s, char (*f)(char c))
 {
 	char	*new_str;
 	int		i;

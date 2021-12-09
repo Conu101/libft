@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:55:45 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/02 14:05:53 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/09 13:35:46 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,10 +57,10 @@ void	ft_memdel(void **ap);
 char	*ft_strnew(size_t size);
 void	ft_strdel(char **as);
 void	ft_strclr(char *s);
-void	ft_striter(char *s, void (*f) (char *));
-void	ft_striteri(char *s, void (*f)(unsigned int, char *));
-char	*ft_strmap(const char *s, char (*f)(char));
-char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
+void	ft_striter(char *s, void (*f) (char *c));
+void	ft_striteri(char *s, void (*f)(unsigned int n, char *c));
+char	*ft_strmap(const char *s, char (*f)(char c));
+char	*ft_strmapi(const char *s, char (*f)(unsigned int n, char c));
 int		ft_strequ(const char *s1, const char *s2);
 int		ft_strnequ(const char *s1, const char *s2, size_t n);
 char	*ft_strsub(const char *s, unsigned int start, size_t len);

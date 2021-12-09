@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:03:23 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/29 10:19:23 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/09 13:35:55 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_striteri(char *s, void (*f)(unsigned int n, char *c))
 {
 	int	i;
 

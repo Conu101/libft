@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:01:22 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/29 10:19:00 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/09 13:35:42 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 #include "libft.h"
 
-void	ft_striter(char *s, void (*f) (char *))
+void	ft_striter(char *s, void (*f) (char *c))
 {
 	int	i;
 

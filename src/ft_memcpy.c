@@ -6,13 +6,13 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 17:20:14 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/02 18:03:05 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/09 14:02:37 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** The ft_memcpy() function copies n bytes from memory area src to memory area
-** dst.  If dst and src overlap, behavior is undefined. Returns the original
+** dst.  If dst and src overlap, behavior is undefined. Returns the 
 ** value of dst.
 */
 

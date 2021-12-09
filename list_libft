@@ -5,11 +5,11 @@ bzero	<DONE> TEST
 
 memcpy	<DONE> TEST
 
-memccpy	<DONE>
+memccpy	<DONE> TEST
 
-memmove	<DONE>
+memmove	<DONE> TEST
 
-memchr	<DONE>
+memchr	<DONE> TEST
 
 memcmp	<DONE>
 
