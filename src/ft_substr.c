@@ -6,9 +6,18 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 13:54:32 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/02 14:20:32 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/09 16:23:25 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** LIBRARY: N/A
+** SYNOPSIS: extract substring from string
+**
+** DESCRIPTION:
+** 		Allocates (with malloc(3)) and returns a substring from the string 's'.
+**	The substring begins at index 'start' and is of maximum size 'len'.
+*/
 
 #include "libft.h"
 

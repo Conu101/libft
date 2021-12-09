@@ -6,13 +6,13 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 13:33:16 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/29 11:13:22 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/09 16:17:56 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** ft_strnstr - Find the first substring in a length-limited string
-** @haystack: The string to be searched in
+** @hay: The string to be searched in
 ** @needle: The string to search for
 ** @len: the maximum number of characters to search
 */

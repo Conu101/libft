@@ -6,9 +6,15 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:29:50 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/29 10:10:21 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/09 15:53:11 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
+/* Allocate (withmalloc(3)) and returns a “fresh” string end-ing with’\0’
+** representing the integer n given as argument. Negative numbers must be 
+** supported. If the allocation fails,the function returns NULL.
+*/
 
 #include "libft.h"
 

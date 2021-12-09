@@ -6,13 +6,23 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 16:59:00 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/29 11:17:46 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/09 16:18:38 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** LIBRARY: <string.h>
+** SYNOPSIS: locate character in string (last occurence)
+**
+** DESCRIPTION:
+** 		The strrchr() function locates the last occurrence of c (converted to a
+**	char) in the string s.  If c is `\0', strrchr() locates the terminating
+**	'\0'.
+*/
+
 #include "libft.h"
 
-char		*ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	char	*str;
 	int		i;

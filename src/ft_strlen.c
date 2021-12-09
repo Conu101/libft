@@ -6,13 +6,22 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 16:57:51 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/04 16:52:07 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/09 16:13:51 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** LIBRARY: <string.h>
+** SYNOPSIS: find length of string
+**
+** DESCRIPTION:
+** 		The strlen() function computes the length of the string s, not inluding
+** the '\0' terminating byte.
+*/
+
 #include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(char *str)
 {
 	int	len;
 

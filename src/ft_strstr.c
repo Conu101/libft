@@ -6,9 +6,18 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 17:55:10 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/29 11:08:29 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/09 16:22:27 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** LIBRARY: <string.h>
+** SYNOPSIS: locate a substring in a string
+**
+** DESCRIPTION:
+** 		The strstr() function locates the first occurrence of the null-
+**	terminated string s2 in the null-terminated string s1.
+*/
 
 #include "libft.h"
 

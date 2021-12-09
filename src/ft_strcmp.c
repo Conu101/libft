@@ -6,13 +6,22 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 12:43:23 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/29 15:19:42 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/09 16:08:05 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** LIBRARY: <string.h>
+** SYNOPSIS: compare strings
+**
+** DESCRIPTION:
+** 		The strcmp() and strncmp() functions lexicographically compare the null-
+**	terminated strings s1 and s2.
+*/
+
 #include "libft.h"
 
-int		ft_strcmp(const char *s1, const char *s2)
+int	ft_strcmp(const char *s1, const char *s2)
 {
 	unsigned const char	*str1;
 	unsigned const char	*str2;

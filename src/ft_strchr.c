@@ -6,9 +6,20 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 16:32:38 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/29 13:51:00 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/09 16:07:06 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** LIBRARY: <string.h>
+** SYNOPSIS: locate character in string (first occurrence)
+**
+** DESCRIPTION:
+** 		The strchr() function locates the first occurrence of c (converted to a
+**	char) in the string pointed to by s.  The terminating null character is
+**	considered to be part of the string; therefore if c is `\0', the func-
+**	tions locate the terminating `\0'.
+*/
 
 #include "libft.h"
 

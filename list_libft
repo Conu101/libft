@@ -11,11 +11,11 @@ memmove	<DONE> TEST
 
 memchr	<DONE> TEST
 
-memcmp	<DONE>
+memcmp	<DONE> TEST
 
-strlen	<DONE>
+strlen	<DONE> TEST
 
-strdup	<DONE>
+strdup	<DONE> TEST
 
 strcpy	<DONE>
 
