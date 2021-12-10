@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:55:45 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/09 15:05:36 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/10 16:09:37 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,5 +72,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+char	*strtok(char *restrict str, const char *restrict sep);
+void	ft_swap(int *a, int *b);
 
 #endif

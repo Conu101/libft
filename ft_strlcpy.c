@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 13:34:18 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/09 16:12:44 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/10 14:58:21 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
 
+	if (!src)
+		return (0);
 	i = 0;
 	if (size > 0)
 	{
