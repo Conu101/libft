@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 16:06:31 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/09 16:16:25 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/11 19:31:43 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 
 #include "libft.h"
 
-char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n)
+char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
 	int	i;
 	int	j;
