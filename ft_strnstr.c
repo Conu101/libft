@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 13:33:16 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/09 16:17:56 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/11 19:28:02 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,16 +19,16 @@
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *hay, const char *needle, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	char	*s1;
 	char	*s2;
 	char	*start;
 	size_t	i;
 
-	s1 = (char *)hay;
-	if (!(*hay || *needle))
-		return ((char *)hay);
+	s1 = (char *)haystack;
+	if (!(*haystack || *needle))
+		return ((char *)haystack);
 	while ((*s1 && len > 0) || (len == 0 && *needle == '\0'))
 	{
 		start = s1;
