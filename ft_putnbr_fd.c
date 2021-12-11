@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:40:02 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/11 18:40:02 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/11 19:18:46 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_putnbr_fd(int n, int fd)
 			ft_putchar_fd('-', fd);
 			n = n * -1;
 		}
-		if (n >= 9)
+		if (n >= 10)
 		{
 			ft_putnbr_fd(n / 10, fd);
 		}
