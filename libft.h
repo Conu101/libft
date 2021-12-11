@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:55:45 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/11 19:11:24 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/11 19:40:43 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,9 @@ char	*ft_strdup(const char *src);
 size_t	ft_strlen(char *str);
 char	*ft_strcpy(char *dst, const char *src);
 char	*ft_strncpy(char *dst, const char *src, size_t len);
-char	*ft_strcat(char *restrict s1, const char *restrict s2);
-char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n);
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, \
+char	*ft_strcat(char *s1, const char *s2);
+char	*ft_strncat(char *s1, const char *s2, size_t n);
+size_t	ft_strlcat(char *dst, const char *src, \
 size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 char	*ft_strchr(const char *s, int c);
@@ -43,7 +43,7 @@ char	*ft_strrchr(const char *s, int c);
 char	*ft_strstr(const char *haystack, const char *needle);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-char	*ft_strnstr(const char *big, const char *little, size_t l);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strtrim(char const *s);
 int		ft_atoi(const char *str);
@@ -59,7 +59,7 @@ void	ft_memdel(void **ap);
 char	*ft_strnew(size_t size);
 void	ft_strdel(char **as);
 void	ft_strclr(char *s);
-void	ft_striter(char *s, void (*f) (char *c));
+void	ft_striter(char *s, void (*f)(char *c));
 void	ft_striteri(char *s, void (*f)(unsigned int n, char *c));
 char	*ft_strmap(const char *s, char (*f)(char c));
 char	*ft_strmapi(const char *s, char (*f)(unsigned int n, char c));
