@@ -6,7 +6,7 @@
 #    By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/09 18:24:28 by ctrouve           #+#    #+#              #
-#    Updated: 2021/12/13 13:27:08 by ctrouve          ###   ########.fr        #
+#    Updated: 2021/12/13 15:43:52 by ctrouve          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,7 @@ FILES = ft_atoi \
 		ft_isdigit \
 		ft_isprint \
 		ft_itoa \
+		ft_is_whitespace \
 		ft_memalloc \
 		ft_memccpy \
 		ft_memchr \

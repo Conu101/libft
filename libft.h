@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:55:45 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/13 14:59:52 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/13 15:43:37 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,7 @@ void		ft_putstr_fd(char const *s, int fd);
 void		ft_putendl_fd(char const *s, int fd);
 void		ft_putnbr_fd(int n, int fd);
 void		ft_swap(int *a, int *b);
+int			ft_is_whitespace(char c);
 const char	*ft_find_next_str(const char *str, char c, int skip);
 int			ft_count_splits_str(const char *str, char seps);
 void		*ft_tabledel(char **array, int i);
