@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:19:02 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/13 15:41:54 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/13 15:53:38 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,18 +21,17 @@
 
 #include "libft.h"
 
-char	*ft_strtrim(const char *s)
+char	*ft_strtrim(char const *s)
 {
 	int		first;
 	int		last;
 	int		len;
-	int		whitesp;
 
 	if (!s)
 		return (NULL);
 	first = 0;
-	whitesp = ft_is_whitespace((char)s[first]);
-	while (s[first] != '\0' && whitesp == 1)
+	while (s[first] != '\0' \
+	&& (s[first] == ' ' || s[first] == '\n' || s[first] == '\t'))
 		first++;
 	last = ft_strlen((char *)s);
 	while (first < last && (s[last - 1] == ' ' \
