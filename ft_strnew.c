@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 17:52:12 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/11 19:32:48 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/13 14:38:22 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strnew(size_t size)
 {
 	char	*str;
 
-	if (size)
+	if (size >= 0)
 	{
 		str = (char *)malloc(sizeof(*str) * (size + 1));
 		if (str)
