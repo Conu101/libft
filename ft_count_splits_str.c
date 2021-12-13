@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striter.c                                       :+:      :+:    :+:   */
+/*   ft_count_splits_str.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/11 18:01:22 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/11 19:49:48 by ctrouve          ###   ########.fr       */
+/*   Created: 2021/12/13 13:07:56 by ctrouve           #+#    #+#             */
+/*   Updated: 2021/12/13 14:04:28 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The ft_striter() function applies the function f to each character of the
-** string passed as argument. Each character is passed by address to f to be
-** modified if necessary.
+/* The ft_count_splits_str() function counts the number of strings existing
+** within the string str when the separator character is seps
 */
 
 #include "libft.h"
 
-void	ft_striter(char *s, void (*f)(char *c))
+int	ft_count_splits_str(const char *str, char seps)
 {
 	int	i;
 
-	if (s && f)
+	i = 0;
+	while (*str != '\0')
 	{
-		i = 0;
-		while (s[i] != '\0')
+		str = ft_find_next_str(str, seps, 1);
+		if (*str != '\0')
 		{
-			f(&s[i]);
 			i++;
+			str = ft_find_next_str(str, seps, 0);
 		}
 	}
+	return (i);
 }

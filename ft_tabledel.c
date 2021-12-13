@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striter.c                                       :+:      :+:    :+:   */
+/*   ft_tabledel.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/11 18:01:22 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/11 19:49:48 by ctrouve          ###   ########.fr       */
+/*   Created: 2021/12/13 13:17:53 by ctrouve           #+#    #+#             */
+/*   Updated: 2021/12/13 13:21:21 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The ft_striter() function applies the function f to each character of the
-** string passed as argument. Each character is passed by address to f to be
-** modified if necessary.
+/* The ft_tabledel() function is used to free the memory allocated to a whole
+**  array of strings array [x] with x < i.
 */
 
 #include "libft.h"
 
-void	ft_striter(char *s, void (*f)(char *c))
+void	*ft_tabledel(char **array, int i)
 {
-	int	i;
+	int	x;
 
-	if (s && f)
+	x = 0;
+	if (array)
 	{
-		i = 0;
-		while (s[i] != '\0')
+		while (x < i)
 		{
-			f(&s[i]);
-			i++;
+			free(array[x]);
+			x++;
 		}
+		free(array);
 	}
+	return (NULL);
 }

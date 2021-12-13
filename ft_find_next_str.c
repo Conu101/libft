@@ -1,33 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striter.c                                       :+:      :+:    :+:   */
+/*   ft_find_next_str.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/11 18:01:22 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/11 19:49:48 by ctrouve          ###   ########.fr       */
+/*   Created: 2021/12/13 12:52:46 by ctrouve           #+#    #+#             */
+/*   Updated: 2021/12/13 14:04:48 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The ft_striter() function applies the function f to each character of the
-** string passed as argument. Each character is passed by address to f to be
-** modified if necessary.
+/*
+** Extra function created for use in ft_strsplit. Based on the value of int 
+** skip (1 or 0), it will skip or not the character c and check the next char 
+** in the string str.
 */
 
 #include "libft.h"
 
-void	ft_striter(char *s, void (*f)(char *c))
+const char	*ft_find_next_str(const char *str, char c, int skip)
 {
-	int	i;
-
-	if (s && f)
-	{
-		i = 0;
-		while (s[i] != '\0')
-		{
-			f(&s[i]);
-			i++;
-		}
-	}
+	if (skip)
+		while (*str != '\0' && *str == c)
+			str++;
+	else
+		while (*str != '\0' && *str != c)
+			str++;
+	return (str);
 }

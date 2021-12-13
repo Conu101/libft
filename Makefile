@@ -6,7 +6,7 @@
 #    By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/09 18:24:28 by ctrouve           #+#    #+#              #
-#    Updated: 2021/12/10 16:11:55 by ctrouve          ###   ########.fr        #
+#    Updated: 2021/12/13 13:27:08 by ctrouve          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,8 @@ RM = rm -f
 FILES = ft_atoi \
 		ft_bzero \
 		ft_calloc \
+		ft_count_splits_str \
+		ft_find_next_str \
 		ft_isalnum \
 		ft_isalpha \
 		ft_isascii \
@@ -71,9 +73,9 @@ FILES = ft_atoi \
 		ft_strtrim \
 		ft_substr \
 		ft_swap \
+		ft_tabledel \
 		ft_tolower \
 		ft_toupper \
-		ft_strtok \
 
 SRCS_DIR = ./
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
@@ -86,9 +88,6 @@ OBJS = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(FILES)))
 
 $(NAME): $(OBJS)
 	$(AR) $@ $^
-
-bonus: $(OBJS_B)
-	$(AR) $(NAME) $^
 
 all: $(NAME)
 
