@@ -6,7 +6,7 @@
 #    By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/09 18:24:28 by ctrouve           #+#    #+#              #
-#    Updated: 2021/12/13 15:43:52 by ctrouve          ###   ########.fr        #
+#    Updated: 2021/12/14 13:20:53 by ctrouve          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,7 +72,6 @@ FILES = ft_atoi \
 		ft_strstr \
 		ft_strsub \
 		ft_strtrim \
-		ft_substr \
 		ft_swap \
 		ft_tabledel \
 		ft_tolower \
