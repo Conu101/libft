@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:55:45 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/14 13:18:20 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/15 15:09:27 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ char		*ft_strsub(const char *s, unsigned int start, size_t len);
 char		*ft_strtrim(const char *s);
 int			ft_tolower(int c);
 int			ft_toupper(int c);
-void		ft_swap(int *a, int *b); /* extra fns */
+void		ft_swap(int *a, int *b);
 int			ft_is_whitespace(char c);
 const char	*ft_find_next_str(const char *str, char c, int skip);
 int			ft_count_splits_str(const char *str, char seps);
