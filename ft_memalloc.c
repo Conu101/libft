@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 17:43:28 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/11 17:43:28 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/15 14:34:41 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	*ft_memalloc(size_t size)
 
 	if (size)
 	{
-		ptr = (void *)malloc(sizeof(*ptr) * (size));
+		ptr = malloc(sizeof(*ptr) * (size));
 		if (ptr)
 		{
 			ft_memset(ptr, 0, size);

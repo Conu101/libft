@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 18:40:54 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/09 16:09:53 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/15 14:51:51 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 ** SYNOPSIS: save a copy of a string (with malloc)
 **
 ** DESCRIPTION:
-** 		The strdup() function allocates sufficient memory for a copy of the
-**	string s1, does the copy, and returns a pointer to it.  The pointer may
+**		The strdup() function allocates sufficient memory for a copy of the
+**	string s1, does the copy, and returns a pointer to it. The pointer may
 **	subsequently be used as an argument to the function free(3).
 */
 

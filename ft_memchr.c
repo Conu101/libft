@@ -6,9 +6,10 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 17:00:31 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/11 17:00:31 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/15 14:43:10 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
 ** The ft_memchr() function locates the first occurrence of c (converted to an
 ** unsigned char) in string s. Returns a pointer to the byte located, or NULL

@@ -6,11 +6,12 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:29:50 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/13 12:54:06 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/15 14:41:05 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* Allocate (withmalloc(3)) and returns a “fresh” string end-ing with’\0’
+/* 
+** Allocate (withmalloc(3)) and returns a “fresh” string ending with  '\0'
 ** representing the integer n given as argument. Negative numbers must be 
 ** supported. If the allocation fails,the function returns NULL.
 */
@@ -29,7 +30,7 @@ static char	*ft_array(char *x, unsigned int number, long int len)
 
 static long int	ft_len(int n)
 {
-	int	len;
+	long int	len;
 
 	len = 0;
 	if (n <= 0)

@@ -6,15 +6,15 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 16:56:37 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/09 18:17:21 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/15 14:44:29 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** ft_memcmp - Compare two areas of memory
-** @s1:	One area of memory
-** @s2:	Another area of memory
-** @n:	The size of the area.
+** ft_memcmp compares two areas of memory.
+** s1:	One area of memory
+** s2:	Another area of memory
+** n:	The size of the area.
 */
 
 #include "libft.h"

@@ -6,9 +6,15 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 16:18:48 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/14 15:29:55 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/15 13:53:24 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Library : #include <stdlib.h>
+** The atoi() function converts the initial portion of the string pointed to 
+** by str to int representation, removing any whitespace at the beginning.
+*/
 
 #include "libft.h"
 
@@ -38,7 +44,7 @@ int	ft_atoi(const char *str)
 			neg *= -1;
 		i++;
 	}
-	while (str[i] >= 48 && str[i] <= 57)
+	while (str[i] >= '0' && str[i] <= '9')
 	{
 		num = num * 10 + ((unsigned long long)str[i] - 48);
 		i++;

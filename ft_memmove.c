@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 17:18:06 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/09 14:11:47 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/15 14:47:01 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	int	i;
+	size_t	i;
 
 	if (dst > src)
 	{
-		i = (int)len - 1;
+		i = len - 1;
 		while (i >= 0)
 		{
 			((char *)dst)[i] = ((char *)src)[i];
