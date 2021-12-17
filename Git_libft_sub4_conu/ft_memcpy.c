@@ -1,34 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 16:57:51 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/09 16:13:51 by ctrouve          ###   ########.fr       */
+/*   Created: 2021/11/11 17:20:14 by ctrouve           #+#    #+#             */
+/*   Updated: 2021/12/17 14:58:12 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** LIBRARY: <string.h>
-** SYNOPSIS: find length of string
-**
-** DESCRIPTION:
-** 		The strlen() function computes the length of the string s, not inluding
-** the '\0' terminating byte.
+** The ft_memcpy() function copies n bytes from memory area src to memory area
+** dst.  If dst and src overlap, behavior is undefined. Returns the 
+** value of dst.
 */
 
 #include "libft.h"
 
-size_t	ft_strlen(char *str)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	int	len;
+	size_t	i;
 
-	len = 0;
-	while (str[len] != '\0')
+	i = 0;
+	if (!dst && !src)
+		return (0);
+	while (i < n)
 	{
-		len++;
+		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
+		i++;
 	}
-	return (len);
+	return (dst);
 }

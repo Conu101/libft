@@ -1,32 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strequ.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/11 18:09:20 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/29 10:27:51 by ctrouve          ###   ########.fr       */
+/*   Created: 2021/11/03 18:52:07 by ctrouve           #+#    #+#             */
+/*   Updated: 2021/12/17 15:02:11 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* The ft_strequ() function does a lexicographical comparison between s1 and
-** s2. If the 2 strings are identical the function returns 1, or 0 otherwise.
+/*
+** LIBRARY: <string.h>
+** SYNOPSIS: copy strings
+**
+** DESCRIPTION:
+**		The stpcpy() and strcpy() functions copy the string src to dst (including
+**	the terminating `\0' character).
 */
 
 #include "libft.h"
 
-int	ft_strequ(char const *s1, char const *s2)
+char	*ft_strcpy(char *dst, const char *src)
 {
-	if (s1 && s2)
+	int	i;
+
+	i = 0;
+	while (src[i] != '\0')
 	{
-		while ((*s1 && *s2) && (*s1 == *s2))
-		{
-			s1++;
-			s2++;
-		}
-		if (!(*s1 - *s2))
-			return (1);
+		dst[i] = src[i];
+		i++;
 	}
-	return (0);
+	dst[i] = '\0';
+	return (dst);
 }

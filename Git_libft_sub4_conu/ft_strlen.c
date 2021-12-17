@@ -1,36 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 18:52:07 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/15 14:50:49 by ctrouve          ###   ########.fr       */
+/*   Created: 2021/11/01 16:57:51 by ctrouve           #+#    #+#             */
+/*   Updated: 2021/12/17 14:29:28 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** LIBRARY: <string.h>
-** SYNOPSIS: copy strings
+** SYNOPSIS: find length of string
 **
 ** DESCRIPTION:
-**		The stpcpy() and strcpy() functions copy the string s2 to s1 (including
-**	the terminating `\0' character).
+** 		The strlen() function computes the length of the string s, not inluding
+** the '\0' terminating byte.
 */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dst, const char *src)
+size_t	ft_strlen(const char *str)
 {
-	int	i;
+	size_t	len;
 
-	i = 0;
-	while (src[i] != '\0')
+	len = 0;
+	while (str[len] != '\0')
 	{
-		dst[i] = src[i];
-		i++;
+		len++;
 	}
-	dst[i] = '\0';
-	return (dst);
+	return (len);
 }

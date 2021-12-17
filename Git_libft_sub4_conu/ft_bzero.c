@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_whitespace.c                                 :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/13 15:30:50 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/15 14:38:24 by ctrouve          ###   ########.fr       */
+/*   Created: 2021/11/11 17:28:55 by ctrouve           #+#    #+#             */
+/*   Updated: 2021/12/17 14:35:14 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* 
-** Bonus function that returns 1 if the character in question is a whitespace.
-** Used by ft_strtrim()
+/*
+** Library : #include <strings.h>
+** The bzero() function writes n zeroed bytes (\0) to the string s.  If n
+** is zero, bzero() does nothing.
 */
 
 #include "libft.h"
 
-int	ft_is_whitespace(char c)
+void	ft_bzero(void *s, size_t n)
 {
-	if (c == '\t' || c == '\n' || c == ' ' || c == 'v' || c == 'r' || c == 'f')
-		return (1);
-	else
-		return (0);
+	if (n != 0)
+	{
+		ft_memset(s, '\0', n);
+	}
 }
