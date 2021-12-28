@@ -6,13 +6,13 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 16:43:42 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/29 14:01:55 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/19 15:51:24 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char *str)
+void	ft_putstr(const char *str)
 {
 	int	i;
 

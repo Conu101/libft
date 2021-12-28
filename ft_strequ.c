@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:09:20 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/11/29 10:27:51 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/17 14:49:26 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,12 @@
 
 #include "libft.h"
 
-int	ft_strequ(char const *s1, char const *s2)
+int	ft_strequ(const char *s1, const char *s2)
 {
+	if (!s1 && !s2)
+		return (1);
+	if (!s1 || !s2)
+		return (0);
 	if (s1 && s2)
 	{
 		while ((*s1 && *s2) && (*s1 == *s2))

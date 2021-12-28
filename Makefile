@@ -6,7 +6,7 @@
 #    By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/09 18:24:28 by ctrouve           #+#    #+#              #
-#    Updated: 2021/12/14 13:20:53 by ctrouve          ###   ########.fr        #
+#    Updated: 2021/12/21 20:03:00 by ctrouve          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -84,7 +84,7 @@ OBJS_DIR = ./
 OBJS = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(FILES)))
 
 .c.o: $(SRCS)
-	$(CC) $(CFLAGS) -c -o $@ $<
+	$(CC) $(CFLAGS) -c -o $@ $^
 
 $(NAME): $(OBJS)
 	$(AR) $@ $^
@@ -92,7 +92,7 @@ $(NAME): $(OBJS)
 all: $(NAME)
 
 clean:
-	$(RM) $(OBJS) $(OBJS_B)
+	$(RM) $(OBJS)
 
 fclean: clean
 	$(RM) $(NAME)

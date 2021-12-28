@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 17:20:14 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/09 14:02:37 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/17 14:58:12 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,20 +18,16 @@
 
 #include "libft.h"
 
-void	*ft_memcpy(void *str1, const void *str2, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned int		i;
-	unsigned char		*dst;
-	unsigned const char	*src;
+	size_t	i;
 
-	if (str1 == NULL && str2 == NULL)
-		return (NULL);
 	i = 0;
-	dst = (unsigned char *)str1;
-	src = (unsigned char *)str2;
+	if (!dst && !src)
+		return (0);
 	while (i < n)
 	{
-		*((char *)dst + i) = *((char *)src + i);
+		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
 		i++;
 	}
 	return (dst);

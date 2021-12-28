@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 16:59:00 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/09 16:18:38 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/17 15:05:14 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,5 @@ char	*ft_strrchr(const char *s, int c)
 			return (&str[i]);
 		i--;
 	}
-	return (0);
+	return (NULL);
 }

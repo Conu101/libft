@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 18:29:50 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/15 14:41:05 by ctrouve          ###   ########.fr       */
+/*   Updated: 2021/12/23 10:49:05 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static char	*ft_array(char *x, unsigned int number, long int len)
 {
 	while (number > 0)
 	{
-		x[len--] = 48 + (number % 10);
+		x[len--] = '0' + (number % 10);
 		number = number / 10;
 	}
 	return (x);
