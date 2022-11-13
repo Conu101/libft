@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/conu101/libft">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="noun-library-876200.png" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center">libft</h3>
@@ -47,7 +47,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Library Screen Shot][product-screenshot]]
+  <a href="https://github.com/conu101/libft">
+    <img src="noun-c-file-896983.png" alt="Logo" width="80" height="80">
+  </a>
 
 C programming can be very tedious when one doesn’t have access to those highly useful standard functions. In this project from Hive Helsinki, I took the time to re-write those functions, understand them, and learn to use them. 
 Initially my libft library consisted of about 50 basic functions, and through the year I have added the following functions as I encountered the need to use them for other projects:
