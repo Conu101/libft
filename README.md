@@ -133,8 +133,8 @@ Project Link: [https://github.com/conu101/libft](https://github.com/conu101/libf
 ## Acknowledgments
 
 Illustrations obtained from "The Noun Project", credits:
-* C File by Hea Poh Lin from <a href="https://thenounproject.com/browse/icons/term/c-file/" target="_blank" title="C File Icons">Noun Project</a>
-* Library by Gan Khoon Lay from <a href="https://thenounproject.com/browse/icons/term/library/" target="_blank" title="Library Icons">Noun Project</a>
+* "Library" by Gan Khoon Lay from <a href="https://thenounproject.com/browse/icons/term/library/" target="_blank" title="Library Icons">Noun Project</a>
+* "C File" by Hea Poh Lin from <a href="https://thenounproject.com/browse/icons/term/c-file/" target="_blank" title="C File Icons">Noun Project</a>
 
 "C" and "VSCode" badges from <a href="https://img.shields.io" target="_blank" title="badges">img.shields.io</a>
 
