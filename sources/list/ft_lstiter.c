@@ -1,35 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/11 17:52:12 by ctrouve           #+#    #+#             */
-/*   Updated: 2021/12/13 14:38:22 by ctrouve          ###   ########.fr       */
+/*   Created: 2022/04/06 12:13:30 by ctrouve           #+#    #+#             */
+/*   Updated: 2022/04/06 12:13:33 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** The function ft_strnew() allocates with malloc(3) and returns a fresh
-** string ending with '\0'. Each character of the string is initialized at
-** '\0'. If the allocation fails, the function returns NULL.
-*/
-
 #include "libft.h"
 
-char	*ft_strnew(size_t size)
+void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-	char	*str;
+	t_list	*next;
 
-	if (size >= 0)
+	while (lst)
 	{
-		str = (char *)malloc(sizeof(*str) * (size + 1));
-		if (str)
-		{
-			ft_memset(str, '\0', (size + 1));
-			return (str);
-		}
+		next = lst->next;
+		f(lst);
+		lst = next;
 	}
-	return (NULL);
 }
