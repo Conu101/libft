@@ -6,41 +6,35 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 15:38:49 by ctrouve           #+#    #+#             */
-/*   Updated: 2022/10/20 15:49:19 by ctrouve          ###   ########.fr       */
+/*   Updated: 2022/10/21 16:27:02 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vector.h"
 #include "libft.h"
 
-/*t_vec3	ft_parse_vec3(char *str)
+static void	ft_char_memdel(char **ap)
 {
-	t_vec3	v;
-	char	*token;
+	int	i;
 
-	str = ft_strstr(str, " ");
-	token = ft_strtok(str, ' ');
-	v.x = ft_strtod(token);
-	token = ft_strtok(NULL, ' ');
-	v.y = ft_strtod(token);
-	token = ft_strtok(NULL, ' ');
-	v.z = ft_strtod(token);
-	return (v);
+	i = 0;
+	while (ap[i])
+	{
+		free (ap[i]);
+		i++;
+	}
+	free (ap);
 }
-*/
+
 t_vec3	ft_parse_vec3(char *str)
 {
 	t_vec3	v;
 	char	**res;
 
-	res = ft_strsplit(str, ' ');
-	if(res[0] != NULL && res[1] != NULL && res[2] != NULL)
-	{
-		v.x = ft_strtod(res[0]);
-		v.y = ft_strtod(res[1]);
-		v.z = ft_strtod(res[2]);
-	}
-	else
-		v = ft_make_vec3(0, 0, 0);
+	res = ft_strsplit((const char *)str, ' ');
+	v.x = ft_strtod(res[1]);
+	v.y = ft_strtod(res[2]);
+	v.z = ft_strtod(res[3]);
+	ft_char_memdel(res);
 	return (v);
 }

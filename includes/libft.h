@@ -6,7 +6,7 @@
 /*   By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 16:55:45 by ctrouve           #+#    #+#             */
-/*   Updated: 2022/10/14 11:46:35 by ctrouve          ###   ########.fr       */
+/*   Updated: 2022/10/21 14:44:38 by ctrouve          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ void		ft_putnbr_fd(int n, int fd);
 void		ft_putstr(const char *str);
 void		ft_putstr_fd(char const *s, int fd);
 void		*ft_realloc(void *ptr, size_t size);
+char		**ft_split_spaces(char *str);
 int			ft_sqrt(int nb);
 char		*ft_strcat(char *s1, const char *s2);
 char		*ft_strchr(const char *s, int c);
@@ -78,7 +79,7 @@ char		**ft_strsplit(char const *s, char c);
 char		*ft_strstr(const char *haystack, const char *needle);
 char		*ft_strsub(const char *s, unsigned int start, size_t len);
 double		ft_strtod(char *s);
-char		*ft_strtok(char *str, const char delim);
+char		*ft_strtok(char *str, const char *sep);
 char		*ft_strtrim(const char *s);
 int			ft_tolower(int c);
 int			ft_toupper(int c);

@@ -6,7 +6,7 @@
 #    By: ctrouve <ctrouve@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/18 14:16:27 by ctrouve           #+#    #+#              #
-#    Updated: 2022/09/22 14:13:37 by ctrouve          ###   ########.fr        #
+#    Updated: 2022/10/21 11:23:38 by ctrouve          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,6 +63,7 @@ LIBC_SRC = ft_abs.c \
 		ft_putstr_fd.c \
 		ft_putstr.c \
 		ft_realloc.c \
+		ft_split_spaces.c \
 		ft_sqrt.c \
 		ft_strcat.c \
 		ft_strchr.c \
